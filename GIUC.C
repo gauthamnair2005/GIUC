@@ -7,7 +7,7 @@ int main(void)
 {
 	int command;
 	printf("Gautham's Important Utility Collection\n");
-	printf("Suite Version 0.0.1\n");
+	printf("Suite Version 23.8.8\n");
 	printf("-----------------------\n");
 	printf("Press the following keys to perfrom an action\n");
 	printf("1. Simple Interest Calculator\n");
@@ -17,8 +17,9 @@ int main(void)
 	printf("5. Even/Odd Number Determiner\n");
 	printf("6. Character Extraction Program\n");
 	printf("7. Pattern Program\n");
-	printf("8. Matrix Program\n");
-	printf("9. Exit\n");
+	printf("8. NumberFlow Program\n");
+	printf("9. Number Comparison Program\n");
+	printf("10. Exit\n");
 	while (command != 8)
 	{
 		printf("> ");
@@ -56,6 +57,10 @@ int main(void)
 			system("matrix.exe");
 		}
 		else if (command == 9)
+		{
+			system("numcomp.exe");
+		}
+		else if (command == 10)
 		{
 			printf("Thank you for using GIUC..!\n");
 			break;
