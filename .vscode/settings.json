@@ -1,6 +1,13 @@
 {
     "files.associations": {
         "*.asmpp": "search-result",
-        "GIUC.C": "cpp"
+        "GIUC.C": "cpp",
+        "FACTORIAL.C": "cpp",
+        "NUMREV.C": "cpp",
+        "Pattern.C": "cpp",
+        "RATAC.C": "cpp",
+        "PALINDROME.C": "cpp",
+        "NUMSUM.C": "cpp",
+        "SIC.C": "cpp"
     }
 }
