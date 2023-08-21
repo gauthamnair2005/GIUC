@@ -20,7 +20,8 @@ int main(void)
 	printf("8. NumberFlow Program\n");
 	printf("9. Number Comparison Program\n");
 	printf("10. Greatest Command Divisor Calculator\n");
-	printf("11. Exit\n");
+	printf("11. Fibonacci Program\n");
+	printf("12. Exit\n");
 	while (command != 8)
 	{
 		printf("> ");
@@ -66,6 +67,10 @@ int main(void)
 			system("gcd.exe");
 		}
 		else if (command == 11)
+		{
+			system("fibonacci.exe");
+		}
+		else if (command == 12)
 		{
 			printf("Thank you for using GIUC..!\n");
 			break;
