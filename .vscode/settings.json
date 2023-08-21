@@ -1,13 +1,14 @@
 {
     "files.associations": {
-        "*.asmpp": "search-result",
-        "GIUC.C": "cpp",
-        "FACTORIAL.C": "cpp",
-        "NUMREV.C": "cpp",
-        "Pattern.C": "cpp",
-        "RATAC.C": "cpp",
-        "PALINDROME.C": "cpp",
-        "NUMSUM.C": "cpp",
-        "SIC.C": "cpp"
+        "*.asmpp": "Assembly-plus-plus",
+        "GIUC.C": "c",
+        "FACTORIAL.C": "c",
+        "NUMREV.C": "c",
+        "Pattern.C": "c",
+        "RATAC.C": "c",
+        "PALINDROME.C": "c",
+        "NUMSUM.C": "c",
+        "SIC.C": "c",
+        "stdio.h": "c"
     }
 }
