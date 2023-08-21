@@ -3,8 +3,22 @@
 #include <conio.h>
 #include <string.h>
 
-int main(void)
+#define GIUC_VERSION "23.8.20"
+
+int main(int argc, char *argv[])
 {
+	if (argc == 2 && strcmp(argv[1], "-v") == 0)
+	{
+		printf("Version: %s\n",GIUC_VERSION);
+		return 0;
+	}
+	else if (argc == 2 && strcmp(argv[1], "-h") == 0)
+	{
+		printf("Help\n");
+		printf("------------------\n");
+		printf("run `giuc` and then type a number representing the function mentioned in menu and you are done..!\n");
+		return 0;
+	}
 	int command;
 	printf("Gautham's Important Utility Collection\n");
 	printf("Suite Version 23.8.20\n");
@@ -90,5 +104,5 @@ int main(void)
 			printf("Invalid Command %d Passed..!\n",command);
 		}
 	}
-	return 0;
+	return 1;
 }
