@@ -21,8 +21,10 @@ int main(void)
 	printf("9. Number Comparison Program\n");
 	printf("10. Greatest Command Divisor Calculator\n");
 	printf("11. Fibonacci Program\n");
-	printf("12. Exit\n");
-	while (command != 8)
+	printf("12. Matrix Asterisk Program\n");
+	printf("13. Matrix Pattern Program\n");
+	printf("14. Exit\n");
+	while (command != 14)
 	{
 		printf("> ");
 		scanf("%d",&command);
@@ -71,6 +73,14 @@ int main(void)
 			system("fibonacci.exe");
 		}
 		else if (command == 12)
+		{
+			system("matrixasteriskpattern.exe");
+		}
+		else if (command == 13)
+		{
+			system("matrixpattern.exe");
+		}
+		else if (command == 14)
 		{
 			printf("Thank you for using GIUC..!\n");
 			break;
