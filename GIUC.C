@@ -3,7 +3,7 @@
 #include <conio.h>
 #include <string.h>
 
-#define GIUC_VERSION "23.8.20"
+#define GIUC_VERSION "23.8.24"
 
 int main(int argc, char *argv[])
 {
@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 	}
 	int command;
 	printf("Gautham's Important Utility Collection\n");
-	printf("Suite Version 23.8.20\n");
+	printf("%s\n",GIUC_VERSION);
 	printf("-----------------------\n");
 	printf("Press the following keys to perfrom an action\n");
 	printf("1. Simple Interest Calculator\n");
