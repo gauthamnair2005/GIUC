@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    float n1,n2,n3;
+    double n1,n2,n3;
     printf("Number Comparison Program\n");
     printf("--------------------------------------------------\n");
     printf("Enter 3 numbers: ");
@@ -33,7 +33,7 @@ int main(void)
     {
         if (n1 == n3)
         {
-            printf("All are equal\n");
+            printf("All numbers are equal\n");
         }
         else
         {

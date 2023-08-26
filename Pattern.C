@@ -2,14 +2,14 @@
 
 int main(void)
 {
-    int i, j, num;
+    unsigned long long i, j, num;
     printf("Enter num: ");
-    scanf("%d", &num);
+    scanf("%u", &num);
     for(i=1; i<=num; i++)
     {
         for(j=1; j<=i; j++)
         {
-            printf("%d", j);
+            printf("%u", j);
         }
         printf("\n");
     }
@@ -18,7 +18,7 @@ int main(void)
     {
         for (j=i; j>=1; j--)
         {
-            printf("%d",j);
+            printf("%u",j);
         }
         printf("\n");
     }

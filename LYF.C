@@ -2,18 +2,18 @@
 
 int main(void)
 {
-	int year;
+	unsigned long long year;
 	printf("Leap Year Finder\n");
 	printf("--------------------------------\n");
 	printf("Please Input an Year (yyyy format): ");
-	scanf("%d",&year);
+	scanf("%u",&year);
 	if (year % 4 == 0 && year % 100 == 0 && year % 400 != 0)
 	{
-		printf("%d is a Leap Year.!\n",year);
+		printf("%u is a Leap Year.!\n",year);
 	}
 	else
 	{
-		printf("%d is not a Leap Year.!\n",year);
+		printf("%u is not a Leap Year.!\n",year);
 	}
 	return 0;
 }

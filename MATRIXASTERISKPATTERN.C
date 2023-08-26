@@ -1,10 +1,10 @@
 #include <stdio.h>
 int main(void)
 {
-    int max,row,col;
+    unsigned long long max,row,col;
     printf("Matrix Asterisk Pattern Generation Program\n");
     printf("Enter the max : ");
-    scanf("%d",&max);
+    scanf("%u",&max);
     for (row = 1; row <= max;)
     {
         for (col = 1; col <= max;)

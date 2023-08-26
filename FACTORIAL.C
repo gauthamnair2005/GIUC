@@ -2,16 +2,14 @@
 int main(void)
 {
     printf("Factorial Program\n");
-    int n;
+    unsigned long long n, i, fact;
     printf("Enter a number: ");
-    scanf("%d",&n);
-    int fact = 1;
-    int i;
+    scanf("%u",&n);
     for (i=1; i <= n;)
     {
         fact = i * fact;
         i = i + 1;
     }
-    printf("%d\n",fact);
+    printf("%u\n",fact);
     return 0;
 }

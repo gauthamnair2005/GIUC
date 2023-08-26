@@ -2,17 +2,15 @@
 int main(void)
 {
     printf("Number Sum Program\n");
-    int n;
+    unsigned long long n, sum = 0, rem;
     printf("Enter a number: ");
-    scanf("%d",&n);
-    int sum = 0;
-    int rem;
+    scanf("%u",&n);
     while (n != 0)
     {
         rem = n % 10;
         sum = sum + rem;
         n = n / 10;
     }
-    printf("%d\n",sum);
+    printf("%u\n",sum);
     return 0;
 }

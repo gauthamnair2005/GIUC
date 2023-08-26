@@ -2,18 +2,18 @@
 
 int main(void)
 {
-	int num;
+	unsigned long long num;
 	printf("Even/Odd Number Determiner\n");
 	printf("-------------------------------\n");
 	printf("Please Input an integer : ");
-	scanf("%d",&num);
+	scanf("%u",&num);
 	if (num % 2 == 0)
 	{
-		printf("%d is an Even Number..!\n",num);
+		printf("%u is an Even Number..!\n",num);
 	}
 	else
 	{
-		printf("%d is an Odd Number..!\n",num);
+		printf("%u is an Odd Number..!\n",num);
 	}
 	return 0;
 }

@@ -2,12 +2,9 @@
 int main(void)
 {
     printf("Numeral Palindrome Identification Program\n");
-    int n;
+    unsigned long long n, original = n, rev = 0, rem;
     printf("Enter a number: ");
-    scanf("%d",&n);
-    int original = n;
-    int rev = 0;
-    int rem;
+    scanf("%u",&n);
     while (n != 0)
     {
         rem = n % 10;

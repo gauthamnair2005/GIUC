@@ -2,7 +2,7 @@
 
 int main(void)
 {
-	float b,h,area;
+	double b,h,area;
 	printf("Right Angle Triangle Area Calculator\n");
 	printf("--------------------------------------------\n");
 	printf("Please Input Base and Height: ");

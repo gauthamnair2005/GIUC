@@ -16,22 +16,22 @@ void age(int present_date, int present_month, int present_year, int birth_date, 
    }
    int final_date = present_date - birth_date;
    int final_month = present_month - birth_month;
-   int final_year = present_year - birth_year;
-   printf("Present Age Years: %d Months: %d Days: %d\n", final_year, final_month, final_date);
+   unsigned long long final_year = present_year - birth_year;
+   printf("Present Age Years: %u Months: %d Days: %d\n", final_year, final_month, final_date);
 }
 
 int main()
 {
    int present_date;
    int present_month;
-   int present_year;
+   unsigned long long present_year;
    int birth_date;
    int birth_month;
-   int birth_year;
+   unsigned long long birth_year;
    printf("Age Calcuator\n");
    printf("----------------------\n");
    printf("Please Input Current Date and Birth Date (current_dd current_mm current_yyyy birth_dd birth_mm birth_yyyy) : ");
-   scanf("%d%d%d%d%d%d",&present_date,&present_month,&present_year,&birth_date,&birth_month,&birth_year);
+   scanf("%d%d%u%d%d%u",&present_date,&present_month,&present_year,&birth_date,&birth_month,&birth_year);
    age(present_date, present_month, present_year, birth_date, birth_month, birth_year);
    return 0;
 }

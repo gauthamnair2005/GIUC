@@ -2,7 +2,7 @@
 
 int main(void)
 {
-	float p,t,r,si;
+	double p,t,r,si;
 	printf("Simple Interest Calculator\n");
 	printf("--------------------------------------\n");
 	printf("Please Input the Principal Amount, Time and Rate Respectively: ");

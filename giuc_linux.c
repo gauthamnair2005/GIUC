@@ -1,13 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <conio.h>
 #include <string.h>
 
-int main(void)
+#define GIUC_VERSION "23.8.26"
+
+int main(int argc, char *argv[])
 {
+	if (argc == 2 && strcmp(argv[1], "-v") == 0)
+	{
+		printf("Version: %s\n",GIUC_VERSION);
+		return 0;
+	}
+	else if (argc == 2 && strcmp(argv[1], "-h") == 0)
+	{
+		printf("Help\n");
+		printf("------------------\n");
+		printf("run `giuc` and then type a number representing the function mentioned in menu and you are done..!\n");
+		return 0;
+	}
 	int command;
 	printf("Gautham's Important Utility Collection\n");
-	printf("Suite Version 23.8.20\n");
+	printf("%s\n",GIUC_VERSION);
 	printf("-----------------------\n");
 	printf("Press the following keys to perfrom an action\n");
 	printf("1. Simple Interest Calculator\n");
@@ -20,8 +33,11 @@ int main(void)
 	printf("8. NumberFlow Program\n");
 	printf("9. Number Comparison Program\n");
 	printf("10. Greatest Command Divisor Calculator\n");
-	printf("11. Exit\n");
-	while (command != 8)
+	printf("11. Fibonacci Program\n");
+	printf("12. Matrix Asterisk Program\n");
+	printf("13. Matrix Pattern Program\n");
+	printf("14. Exit\n");
+	while (command != 14)
 	{
 		printf("> ");
 		scanf("%d",&command);
@@ -31,11 +47,11 @@ int main(void)
 		}
 		else if (command == 2)
 		{
-			system("./sic");
+			system("./lyf");
 		}
 		else if (command == 3)
 		{
-			system("./sic");
+			system("./ratac");
 		}
 		else if (command == 4)
 		{
@@ -67,6 +83,18 @@ int main(void)
 		}
 		else if (command == 11)
 		{
+			system("./fibonacci");
+		}
+		else if (command == 12)
+		{
+			system("./matrixasteriskpattern");
+		}
+		else if (command == 13)
+		{
+			system("./matrixpattern");
+		}
+		else if (command == 14)
+		{
 			printf("Thank you for using GIUC..!\n");
 			break;
 		}
@@ -75,5 +103,5 @@ int main(void)
 			printf("Invalid Command %d Passed..!\n",command);
 		}
 	}
-	return 0;
+	return 1;
 }

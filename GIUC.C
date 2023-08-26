@@ -3,7 +3,7 @@
 #include <conio.h>
 #include <string.h>
 
-#define GIUC_VERSION "23.8.24"
+#define GIUC_VERSION "23.8.26"
 
 int main(int argc, char *argv[])
 {
