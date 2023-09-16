@@ -1,6 +1,6 @@
 echo "Welcome to GIUC Compile Script"
 gcc -o age age.c
-gcc -o cep CEP.c
+gcc -o cep CEP.C
 gcc -o eond EOND.C
 gcc -o factorial FACTORIAL.C
 gcc -o fibonacci fibonacci.c

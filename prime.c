@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <conio.h>
 
 void main(void) {
     unsigned long long int i, num, temp;
