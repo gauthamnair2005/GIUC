@@ -2,31 +2,31 @@
 
 int main(void)
 {
-    double n1,n2,n3;
+    long double n1,n2,n3;
     printf("Number Comparison Program\n");
     printf("--------------------------------------------------\n");
     printf("Enter 3 numbers: ");
-    scanf("%f%f%f",&n1,&n2,&n3);
+    scanf("%Lf%Lf%Lf",&n1,&n2,&n3);
     if (n1 > n2)
     {
         if (n1 > n3)
         {
-            printf("%f is greater\n",n1);
+            printf("%Lf is greater\n",n1);
         }
         else
         {
-            printf("%f is greater\n",n3);
+            printf("%Lf is greater\n",n3);
         }
     }
     else if (n1 < n2)
     {
         if (n2 > n3)
         {
-            printf("%f is greater\n",n2);
+            printf("%Lf is greater\n",n2);
         }
         else
         {
-            printf("%f is greater\n",n3);
+            printf("%Lf is greater\n",n3);
         }
     }
     else
@@ -39,11 +39,11 @@ int main(void)
         {
             if (n1 > n3)
             {
-                printf("%f is greater\n",n1);
+                printf("%Lf is greater\n",n1);
             }
             else
             {
-                printf("%f is greater\n",n3);
+                printf("%Lf is greater\n",n3);
             }
         }
     }

@@ -2,16 +2,16 @@
 
 int main(void)
 {
-    unsigned long long a,b,tmp;
+    unsigned long long int a,b,tmp;
     printf("Greatest Common Divisor Calculator\n");
     printf("Enter two numbers: ");
-    scanf("%u%u",&a,&b);
+    scanf("%llu%llu",&a,&b);
     while (b != 0)
     {
         tmp = a % b;
         a = b;
         b = tmp;
     }
-    printf("%u\n",a);
+    printf("%llu\n",a);
     return 0;
 }

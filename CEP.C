@@ -3,8 +3,8 @@
 
 int main(void)
 {
-    char character[500000];
-    unsigned long long i;
+    char character[50000000000];
+    unsigned long long int i;
     printf("Character Extraction Program\n");
     printf("Enter a string: ");
     scanf("%[^\n]",character);
