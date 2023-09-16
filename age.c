@@ -17,7 +17,7 @@ void age(int present_date, int present_month, unsigned long long int present_yea
    int final_date = present_date - birth_date;
    int final_month = present_month - birth_month;
    unsigned long long int final_year = present_year - birth_year;
-   printf("Present Age Years: %llu Months: %llu Days: %llu\n", final_year, final_month, final_date);
+   printf("Present Age Years: %llu Months: %d Days: %llu\n", final_year, final_month, final_date);
 }
 
 int main()
