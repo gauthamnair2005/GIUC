@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define GIUC_VERSION "23.8.26"
+#define GIUC_VERSION "23.9.16"
 
 int main(int argc, char *argv[])
 {
@@ -36,7 +36,9 @@ int main(int argc, char *argv[])
 	printf("11. Fibonacci Program\n");
 	printf("12. Matrix Asterisk Program\n");
 	printf("13. Matrix Pattern Program\n");
-	printf("14. Exit\n");
+	printf("14. Prime Number Determiner\n");
+	printf("15. Factorial Program\n");
+	printf("16. Exit\n");
 	while (command != 14)
 	{
 		printf("> ");
@@ -94,6 +96,14 @@ int main(int argc, char *argv[])
 			system("./matrixpattern");
 		}
 		else if (command == 14)
+		{
+			system("./prime");
+		}
+		else if (command == 15)
+		{
+			system("./factorial");
+		}
+		else if (command == 16)
 		{
 			printf("Thank you for using GIUC..!\n");
 			break;
