@@ -1,17 +1,19 @@
 #include <stdio.h>
-
-int main(void)
-{
-    unsigned long long int a,b,tmp;
-    printf("Greatest Common Divisor Calculator\n");
-    printf("Enter two numbers: ");
-    scanf("%llu%llu",&a,&b);
-    while (b != 0)
-    {
-        tmp = a % b;
-        a = b;
-        b = tmp;
+int main(void) {
+    unsigned long long int m,n,temp,tmp;
+    printf("GCD Program\n");
+    printf("--------------------------------\n");
+    printf("Enter the two numbers: ");
+    scanf("%llu%llu",&m,&n);
+    tmp = m;
+    temp = n;
+    while (m != n) {
+        if (m > n) {
+            m = m - n;
+        } else {
+            n = n - m;
+        }
     }
-    printf("%llu\n",a);
+    printf("The GCD of %llu and %llu is %llu\n",tmp,temp,m);
     return 0;
 }

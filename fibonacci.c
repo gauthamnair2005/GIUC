@@ -5,7 +5,7 @@ int main(void)
     printf("Fibonacci Generator\n");
     printf("Enter a limit: ");
     scanf("%llu",&n);
-    printf("Fibonacci Series till %llu Digits : ",n);
+    printf("Fibonacci Series till %llu Digits : \n",n);
     printf("%llu\t%llu\t",f1,f2);
     for (i = 3; i <= n; i++)
     {
