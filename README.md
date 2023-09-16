@@ -1,7 +1,7 @@
 # GIUC
 Gautham's Important Utility Collection
 ## What's New?
-* Update 23.8.26 - Added Support for very large numbers (unsigned long long and double)
+* Update 23.9.16 - Added Support for very large numbers (unsigned long long int and unsigned double)
 ## Recommended Compiler(s)
 * Embarcadero C++ Compiler
 * MinGW-w64
